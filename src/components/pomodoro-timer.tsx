@@ -4,7 +4,7 @@ import { Timer } from './timer';
 import { Button } from './button';
 import bellStart from '../sounds/src_bell_start.mp3';
 import bellFinish from '../sounds/src_bell_finish.mp3';
-import { secondsToTime } from '../utils/seconds.to-time';
+import { secondsToTime } from '../utils/seconds-to-time';
 
 const audioStartWorking = new Audio(bellStart);
 const audioStopWorking = new Audio(bellFinish);
@@ -87,12 +87,14 @@ export function PomodoroTimer(props: Props) {
   useInterval(
     () => {
       setMainTime(mainTime - 1);
+
+      if (working) setFullWorkingTime(fullWorkingTime + 1);
     },
     timeCounting ? 1000 : null,
   );
   return (
     <div className="pomodoro">
-      <h2>You are: working</h2>
+      <h2>Você está: {working ? 'Trabalhando' : 'Descansando'}</h2>
       <Timer mainTime={mainTime} />
 
       <div className="controls">
@@ -108,7 +110,7 @@ export function PomodoroTimer(props: Props) {
       <div className="details">
         <p>Ciclos concluídos: {completedCycles}</p>
         <p>Tempo total de trabalho: {secondsToTime(fullWorkingTime)}</p>
-        <p>Numeros de pomodoros concluídos: {numberOfPomodoros}</p>
+        <p>Números de pomodoros concluídos: {numberOfPomodoros}</p>
       </div>
     </div>
   );

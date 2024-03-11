@@ -1,27 +1,11 @@
-# React + TypeScript + Vite
+# Projeto Pomodoro Timer com React e Typescript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto é um simples pomodoro timer feito para gerenciar as horas trabalhadas e as de descanso, foi feito na sessão 27 por parte do curso de Javascript do básico ao avançado do professor [Luiz Otávio Miranda](https://github.com/luizomf). Nesse projeto foi trabalhado mais os principios do React, além de junto os conhecimentos do React com o Typescript.
 
-Currently, two official plugins are available:
+Após esse projeto eu iniciei os estudos de Design Patterns nesse repositório: https://github.com/W-Wag/design-patterns-ts/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### O projeto pode ser testado a partir desse link: https://w-wag.github.io/pomodoro-react-ts/
 
-## Expanding the ESLint configuration
+## Certificado de Conclusão
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![image](https://github.com/W-Wag/pomodoro-react-ts/assets/108705985/171d4e5c-693c-4eea-9dec-82140ed79d7f)
